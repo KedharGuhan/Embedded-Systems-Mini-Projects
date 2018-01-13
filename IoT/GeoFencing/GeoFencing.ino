@@ -1,16 +1,3 @@
-// Adafruit IO Digital Input Example
-// Tutorial Link: https://learn.adafruit.com/adafruit-io-basics-digital-input
-//
-// Adafruit invests time and resources providing this open source code.
-// Please support Adafruit and open source hardware by purchasing
-// products from Adafruit!
-//
-// Written by Todd Treece for Adafruit Industries
-// Copyright (c) 2016 Adafruit Industries
-// Licensed under the MIT license.
-//
-// All text above must be included in any redistribution.
-
 /************************** Configuration ***********************************/
 
 // edit the config.h tab and enter your Adafruit IO credentials
@@ -20,7 +7,7 @@
 #include "TinyGPS++.h"
 TinyGPSPlus gps;
 
-/************************ Example Starts Here *******************************/
+/************************ Starts Here *******************************/
 double hmlat = 10.544430;
 double hmlong = 76.223078;
 double Lat, Long;
@@ -77,8 +64,5 @@ while(Serial.available()>0){
    if(current!=0){
   alert->save(current);
    }
-
   
- 
-
 }
